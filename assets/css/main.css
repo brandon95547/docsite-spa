@@ -1,0 +1,157 @@
+/* RESET */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* APP */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+h1,h2,h3, .app-container a.active { color: #00a0b1; }
+.header-wrap {
+    background-color: #15a9b9;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header-wrap__h1 {
+    line-height: 1;
+}
+.header-wrap__h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+.header-wrap__nav {
+
+}
+.header-wrap__nav ul {
+    display: inline-block;
+}
+.header-wrap__nav ul li {
+    display: inline-block;
+}
+.header-wrap__nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    display: inline-block;
+}
+.header-wrap__nav form {
+    display: inline-block;
+}
+.header-wrap__nav form [type="search"] {
+    display: none;
+}
+.header-wrap__nav form i {
+    color: white;
+}
+.list-s1 {
+    
+}
+.list-s1 a {
+    color: #222;
+    text-decoration: none;
+    line-height: 2;
+}
+.app-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.app-container main {
+    margin-top: 70px;
+}
+.chapters {
+position: fixed;
+    width: 220px;
+}
+.main-content {
+        float: left;
+    width: 928px;
+    margin-left: 220px;
+}
+.hashpoint { visibility: hidden; }
+
+/* UTILITIES */
+.u-text-r {
+    text-align: right;
+}
+.u-text-l {
+    text-align: left;
+}
+.u-pt-1, .u-pv-1 {
+    padding-top: 16px;
+}
+.u-pb-1, .u-pv-1 {
+    padding-bottom: 16px;
+}
+.u-pt-2, .u-pv-2 {
+    padding-top: 32px;
+}
+.u-pb-2, .u-pv-2 {
+    padding-bottom: 32px;
+}
+.u-pt-3, .u-pv-3 {
+    padding-top: 48px;
+}
+.u-pb-3, .u-pv-3 {
+    padding-bottom: 48px;
+}
+.u-pl-1, .u-ph-1 {
+    padding-left: 16px;
+}
+.u-pr-1, .u-ph-1 {
+    padding-right: 16px;
+}
+.u-pl-2, .u-ph-2 {
+    padding-left: 32px;
+}
+.u-pr-2, .u-ph-2 {
+    padding-right: 32px;
+}
+.u-pl-3, .u-ph-3 {
+    padding-left: 48px;
+}
+.u-pr-3, .u-ph-3 {
+    padding-right: 48px;
+}
