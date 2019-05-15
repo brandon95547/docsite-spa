@@ -100,15 +100,17 @@ h1,h2,h3, .app-container a.active { color: #00a0b1; }
 }
 .app-container main {
     margin-top: 70px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 .chapters {
-position: fixed;
+position: sticky;
     width: 220px;
+    top: 70px;
 }
 .main-content {
-        float: left;
     width: 928px;
-    margin-left: 220px;
 }
 .hashpoint { visibility: hidden; }
 
@@ -154,4 +156,7 @@ position: fixed;
 }
 .u-pr-3, .u-ph-3 {
     padding-right: 48px;
+}
+.col-fx-1 {
+    flex-grow: 1;
 }
