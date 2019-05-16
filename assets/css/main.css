@@ -96,21 +96,17 @@ h1,h2,h3, .app-container a.active { color: #00a0b1; }
 }
 .app-container {
     max-width: 1180px;
-    margin: 0 auto;
-}
-.app-container main {
-    margin-top: 70px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    margin: 70px auto 0;
 }
 .chapters {
-position: sticky;
+    position: fixed;
     width: 220px;
     top: 70px;
 }
 .main-content {
+    float: left;
     width: 928px;
+    margin-left: 220px;
 }
 .hashpoint { visibility: hidden; }
 

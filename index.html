@@ -48,7 +48,7 @@
                         <li><a class="chapter" href="#chapter-5">Chapter 5</a></li>
                     </ul>
                 </aside>
-                <article class="fx-grow-1 u-pt-3 main-content" style="    width: 928px;flex: 1;">
+                <article class="fx-grow-1 u-pt-3 main-content" style="float: left;width: 928px;">
                     <div>
                         <a name="getting-started"></a>
                         <h1>Getting Started</h1>
@@ -223,7 +223,8 @@
                     navItems[0].classList.add('active');
                 }
 
-                if (!event.target.matches('.chapter')) return;
+                //if (!event.target.matches('.chapter')) return;
+                if (!event.target.classList.contains('chapter')) return;
                 event.preventDefault();
 
                 // set the nav item active
