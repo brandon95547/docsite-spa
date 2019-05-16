@@ -243,22 +243,13 @@
                 // get the chapter element
                 var element = document.querySelectorAll('a[name="' + target + '"]')[0];
 
-                var headerOffset = 117;
-                var elementPosition = element.offsetTop;
-                var offsetPosition = elementPosition - headerOffset;
-                document.documentElement.scrollTop = offsetPosition;
-                document.body.scrollTop = offsetPosition; // For Safari
-
                 // grab the top position
-/*                 element.scrollIntoView({ 
-                    behavior: 'smooth' 
-                }); */
-                /* var divOffset = offset(element);
+                var divOffset = offset(element);
 
                 window.scrollTo({
                     top: divOffset.top - 117, // negate the fixed top nav and adjust
                     behavior: 'smooth'
-                }); */
+                });
 
             }, false);
 
