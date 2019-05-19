@@ -15,11 +15,16 @@ function jump(target, options) {
             : opt.duration,
         timeStart, timeElapsed
     ;
-    
-    requestAnimationFrame(function(time) { timeStart = time; loop(time); });
+
+    requestAnimationFrame(function(time) { 
+        timeStart = time; 
+        loop(time); 
+    });
     
     function loop(time) {
         timeElapsed = time - timeStart;
+
+        console.log(start + '/' + distance);
 
         window.scrollTo(0, opt.easing(timeElapsed, start, distance, duration));
 

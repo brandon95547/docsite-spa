@@ -9,6 +9,9 @@ html {
 *:after {
     box-sizing: inherit;
 }
+*:focus, *:active {
+    outline: none;
+}
 
 body,
 h1,
