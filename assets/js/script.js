@@ -13,6 +13,19 @@ function initSmoothScrolling() {
     delegatedLinkHijacking();
 
     var sideNavItems = document.querySelectorAll('.list-s1 li a');
+    var sideNav = document.querySelector('.chapters>ul');
+    var sideNavToggle = document.querySelector('.list-s1__toggle');
+
+    sideNavToggle.addEventListener('click', function(e) {
+        if(!e.target.classList.contains('open')) {
+            e.target.classList.add('open');
+            sideNav.classList.add('open');
+        }
+        else {
+            e.target.classList.remove('open');
+            sideNav.classList.remove('open');
+        }
+    }, false);
     
     function delegatedLinkHijacking() {
         document.body.addEventListener('click', onClick, false);
@@ -29,9 +42,17 @@ function initSmoothScrolling() {
             });
 
             e.target.classList.add('active');
+
+            
+            if(sideNavToggle.classList.contains('open')) {
+                sideNavToggle.classList.remove('open');
+                sideNav.classList.remove('open');
+                var offset = -25;
+            }
             
             jump(e.target.hash, {
                 duration: duration,
+                offset: typeof offset != 'undefined' ? offset : 0,
                 callback: function() {
                     setFocus(e.target.hash);
                 }

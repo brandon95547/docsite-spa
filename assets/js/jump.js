@@ -33,10 +33,10 @@ function jump(target, options) {
     }
 
     function end() {
-        window.scrollTo(0, start + distance);
+        /* window.scrollTo(0, start + distance);
 
         if (typeof opt.callback === 'function')
-            opt.callback();
+            opt.callback(); */
     }
     
     // Robert Penner's easeInOutQuad - http://robertpenner.com/easing/
