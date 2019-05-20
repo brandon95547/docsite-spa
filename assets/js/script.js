@@ -11,6 +11,8 @@ function initSmoothScrolling() {
     ;
     
     delegatedLinkHijacking();
+
+    var sideNavItems = document.querySelectorAll('.list-s1 li a');
     
     function delegatedLinkHijacking() {
         document.body.addEventListener('click', onClick, false);
@@ -21,6 +23,12 @@ function initSmoothScrolling() {
             
             e.stopPropagation();
             e.preventDefault();
+
+            [].forEach.call(sideNavItems, function(a) {
+                a.classList.remove('active');
+            });
+
+            e.target.classList.add('active');
             
             jump(e.target.hash, {
                 duration: duration,

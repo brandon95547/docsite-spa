@@ -39,10 +39,19 @@ img {
 
 /* APP */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
+    font-weight: 300;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 500;
 }
 h1,h2,h3, .app-container a.active { color: #00a0b1; }
+h2 {
+    font-size: 24px;
+}
 .header-wrap {
     background-color: #15a9b9;
     display: -webkit-box;

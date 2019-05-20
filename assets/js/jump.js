@@ -24,8 +24,6 @@ function jump(target, options) {
     function loop(time) {
         timeElapsed = time - timeStart;
 
-        console.log(start + '/' + distance);
-
         window.scrollTo(0, opt.easing(timeElapsed, start, distance, duration));
 
         if (timeElapsed < duration)
