@@ -43,7 +43,7 @@ function initSmoothScrolling() {
 
             e.target.classList.add('active');
 
-            
+            // when using mobile, toggle the open class and adjust the offset for the scroll
             if(sideNavToggle.classList.contains('open')) {
                 sideNavToggle.classList.remove('open');
                 sideNav.classList.remove('open');
