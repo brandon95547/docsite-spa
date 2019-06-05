@@ -58,10 +58,11 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
-h1,h2, .app-container a.active { color: #999; }
+h1,h2, .app-container a.active { color: #3eb94f; }
 h2 {
     font-size: 24px;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 h3 {
     margin-bottom: 12px;
