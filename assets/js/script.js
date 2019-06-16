@@ -1,7 +1,7 @@
 initSmoothScrolling();
+var isScrolling = false;
 
 function initSmoothScrolling() {
-
 
     var duration = 400;
 
@@ -17,22 +17,18 @@ function initSmoothScrolling() {
     
     // set links active when scrolling into view
     window.addEventListener('scroll', function (e) {
-        
-        var formsTop = document.querySelector('#forms').getBoundingClientRect().top - 117;
-        var advertsTop = document.querySelector('#adverts').getBoundingClientRect().top - 117;
-        
-        [].forEach.call(sideNavItems, function (a) {
-            var area = a.getAttribute('href');
-            var top = document.querySelector(area).getBoundingClientRect().top - 117;
-            if(top > -175 && top < 175) {
-                clearActiveStates();
-                if(!a.classList.contains('active')) {
-                    a.classList.add('active');
+        if(!isScrolling) {
+            [].forEach.call(sideNavItems, function (a) {
+                var area = a.getAttribute('href');
+                var top = document.querySelector(area).getBoundingClientRect().top - 117;
+                if(top > -175 && top < 175) {
+                    clearActiveStates();
+                    if(!a.classList.contains('active')) {
+                        a.classList.add('active');
+                    }
                 }
-            }
-            console.log(top);
-        });
-
+            });
+        }
         
     });
 
@@ -73,7 +69,7 @@ function initSmoothScrolling() {
                 sideNav.classList.remove('open');
                 var offset = -25;
             }
-
+            isScrolling = true;
             jump(e.target.hash, {
                 duration: duration,
                 offset: typeof offset != 'undefined' ? offset : 0,
