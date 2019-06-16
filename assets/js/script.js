@@ -20,8 +20,11 @@ function initSmoothScrolling() {
         if(!isScrolling) {
             [].forEach.call(sideNavItems, function (a) {
                 var area = a.getAttribute('href');
-                var top = document.querySelector(area).getBoundingClientRect().top - 117;
-                if(top > -175 && top < 175) {
+                var elementBox = document.querySelector(area).getBoundingClientRect();
+                var top = elementBox.top - 117;
+                var height = elementBox.height;
+                if(top > -175 - height && top < 175) {
+                    
                     clearActiveStates();
                     if(!a.classList.contains('active')) {
                         a.classList.add('active');
