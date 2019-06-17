@@ -3,7 +3,7 @@ var isScrolling = false;
 
 function initSmoothScrolling() {
 
-    var duration = 400;
+    var duration = 1600;
 
     var pageUrl = location.hash ?
         stripHash(location.href) :
@@ -59,6 +59,7 @@ function initSmoothScrolling() {
             if (!isInPageLink(e.target))
                 return;
 
+                console.log('test');
             e.stopPropagation();
             e.preventDefault();
 
