@@ -193,6 +193,19 @@ h3>span {
 .clearfix {
     clear: both;
 }
+.layout__columngrid {
+    display: flex;
+    border: 1px solid #CCC;
+    padding: 40px 120px;
+    justify-content: center;
+    text-align: center;
+}
+.layout__column {
+    flex: 1;
+    height: 300px;
+    background-color: #e8e8e8;
+    margin-right: 15px;
+}
 @media screen and (max-width: 640px) {
     .chapters {
         width: 100%;
