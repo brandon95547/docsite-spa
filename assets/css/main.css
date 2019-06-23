@@ -67,7 +67,8 @@ h2 {
 }
 h3 {
     margin-bottom: 12px;
-    text-align: right;
+    color: #777;
+    font-size: 22px;
 }
 h3>span {
     color: #777;
